@@ -1,0 +1,291 @@
+body{
+	background-color: #f4f0ef;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0;
+    padding: 20px;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner img{
+	width: 100%;
+    height: 200px;
+    object-fit: cover;
+	border-radius:12px;
+}
+.depto{
+	width: 80%;
+	max-width:90%;
+	margin: 0 auto;
+	justify-self: center;
+}
+.deptoInfo{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	margin-bottom: 40px;
+	height: 500px;
+}
+
+.contacto{
+	flex: 1; 
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08); 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.lista-contacto {
+    list-style: none; 
+    padding: 0;
+    margin: 15px 0;
+}
+
+.lista-contacto li {
+    position: relative;
+    padding-left: 35px; 
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    color: #444;
+    display: flex;
+    align-items: center;
+    min-height: 24px;
+}
+
+.lista-contacto li::before {
+    font-family: "Font Awesome 6 Free"; 
+    font-weight: 900; 
+    position: absolute;
+    left: 0;
+    color: #bfa35a;
+    font-size: 1.1rem;
+}
+
+.lista-contacto li.ubicacion::before {
+    content: "\f3c5"; 
+}
+
+.lista-contacto li.tel::before {
+    content: "\f095";
+}
+
+.lista-contacto li.email::before {
+    content: "\f0e0";
+}
+
+.lista-contacto li a {
+    color: #3f6298;
+    text-decoration: none;
+}
+
+.contImg{
+	width:100%;
+	height:200px;
+	object-fit: cover;
+	display: block;
+}
+
+.contText{
+	padding: 20px;
+}
+
+.contText h2{
+	font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.contText p {
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.contText ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.contText ul li {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contText ul li i {
+    color: #bf9b30; 
+    margin-right: 12px;
+    font-size: 1.1em;
+}
+
+.contText ul li a {
+    color: #1a56db; 
+    text-decoration: none;
+}
+
+.infoDepto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.noseQejeso {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+.quejeso1{
+	padding: 20px;
+    position: relative;
+    padding-left: 70px;
+}
+
+.quejeso1 .icono {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bf9b30;
+    font-size: 1.8em;
+}
+
+.quejeso1 h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.quejeso1 p {
+    margin: 0;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.btnIN{
+	display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-top: 1px solid #eaecef;
+    color: #1a56db;
+    cursor: pointer;
+    background-color: #fcfdfe;
+}
+
+.btnIN:hover {
+    background-color: #e2e6e9;
+}
+
+.btnIN h2 {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.btnIN i {
+    margin-right: 10px;
+}
+
+.objetivo {
+    background-color: #fdf6ec; 
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+    padding: 20px;
+	flex: 1;
+}
+
+.objetivo h2 {
+    color: #bf9b30; 
+    margin-top: 0;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+
+.objetivo h2::before {
+    content: '\f140'; 
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: #bf9b30;
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.objetivo ul {
+    margin: 0;
+}
+
+.objetivo ul li {
+    position: relative;
+    padding-left: 25px; 
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 0.95em;
+}
+
+.deptoFunc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    width: 100%;
+}
+
+.deptoFunc .tituloFunc {
+    grid-column: 1 / -1; 
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.funcion {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.funcion:hover{
+	background-color:#e2e6e9;
+}
+
+.funcion img {
+    width: 35px; 
+    height: 35px;
+    margin-bottom: 15px;
+}
+
+.funcion h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.funcion p {
+    margin: 0;
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+.icono{
+	margin: 20px;
+	width:30px;
+	height:30px;
+}
