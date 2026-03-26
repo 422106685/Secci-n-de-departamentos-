@@ -52,6 +52,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     console.log("Tarjetas cargadas dinámicamente con éxito.");
+	
+    const ventanasEmergentes = document.querySelectorAll(".Ventana");
+
+    ventanasEmergentes.forEach(ventana => {
+        ventana.addEventListener("click", function(event) {
+            if (event.target === this) {
+                this.style.display = "none";
+            }
+        });
+    });
+
 });
 
 /**
