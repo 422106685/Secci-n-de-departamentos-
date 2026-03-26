@@ -11,13 +11,22 @@ const departamentos = [
         icono: "🌿"
     },
     {
-        nombre: "Departamento de Innovación Educativa",
+        nombre: "Departamento de Proyección Empresarial e Intercambio y Colaboración Institucional",
         icono: "💡"
     },
     {
-        nombre: "Departamento de Proyección Empresarial",
+        nombre: "Departamento de Investigación en Procuración y Administración de Justicia.",
+        icono: "🏢"
+    },
+    {
+        nombre: "Departamento De Investigación Educativa",
+        icono: "🏢"
+    },
+    {
+        nombre: "Departamento de Análisis de Riesgos Naturales y Antropogénicos",
         icono: "🏢"
     }
+    
 ];
 
 // Función que se ejecuta cuando la página ha cargado
