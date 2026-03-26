@@ -44,3 +44,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     console.log("Tarjetas cargadas dinámicamente con éxito.");
 });
+
+/**
+ * @param {string} elementId  ID del elemento HTML
+ */
+function toggleDisplayFlex(elementId) {
+    try {
+        const element = document.getElementById(elementId);
+
+        if (!element) {
+            console.error(`No se encontró un elemento con id="${elementId}"`);
+            return;
+        }
+
+        // Si está oculto, mostrar como flex; si no, ocultar
+        if (window.getComputedStyle(element).display === "none") {
+            element.style.display = "flex";
+        } else {
+            element.style.display = "none";
+        }
+    } catch (error) {
+        console.error("Error al cambiar el display:", error);
+    }
+}
