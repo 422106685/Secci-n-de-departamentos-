@@ -46,7 +46,15 @@ body {
     margin: 40px auto;
     padding: 0 20px;
 }
-
+#NombreDepto{
+	color: var(--unam-azul);
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 20px;
+	padding-top: 0;
+}
 /* Sección de Información */
 .info-section {
     display: flex;
@@ -66,10 +74,7 @@ body {
 .profile-image-placeholder {
     width: 80px;
     height: 80px;
-<<<<<<< HEAD
-=======
     background-color: #e2e8f0;
->>>>>>> 4aeb424dbdb630bd35225add00301f345dd06089
     border-radius: 50%;
     overflow: hidden; /* IMPORTANTE */
     display: flex;
@@ -189,6 +194,13 @@ body {
     border-color: var(--unam-dorado); /* Borde dorado al hacer hover */
 }
 
+.DeptoActual {
+	background-color: var(--unam-azul);
+}
+.DeptoActual.card-text{
+	color: var(--unam-dorado);
+}
+
 .card-icon {
     font-size: 2em;
 }
@@ -199,7 +211,6 @@ body {
     color: var(--unam-azul); /* Texto del departamento en azul */
 }
 
-<<<<<<< HEAD
 .Emergente {
     /* Posicionamiento */
     position: fixed;
@@ -208,11 +219,7 @@ body {
     transform: translate(-50%, -50%); /* Centra la ventana perfectamente */
     
     /* Dimensiones */
-=======
-/* Ventanas Modales */
-.Emergente {
     align-self: center;
->>>>>>> 4aeb424dbdb630bd35225add00301f345dd06089
     height: 50%;
     width: 50%;
     max-width: 50%;
@@ -222,20 +229,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-<<<<<<< HEAD
     background-color: #e1e4e8;
     border-radius: 20px;
     
     /* LA MAGIA: Activa el deslizable */
     overflow-y: auto; 
-    
     /* Opcional: Evita que el contenido choque con los bordes al bajar */
     box-sizing: border-box; 
-=======
     background-color: #fff;
     border-radius: 12px;
     border-top: 5px solid var(--unam-azul);
->>>>>>> 4aeb424dbdb630bd35225add00301f345dd06089
 }
 
 .Ventana {
@@ -248,4 +251,8 @@ body {
     justify-content: center;
     align-content: center;
     top: 0px;
+}
+
+.Emergente ul{
+	padding:revert-layer;
 }
