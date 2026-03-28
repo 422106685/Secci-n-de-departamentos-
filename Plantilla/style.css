@@ -46,6 +46,10 @@ body {
     margin: 40px auto;
     padding: 0 20px;
 }
+.logoDepto{
+	display: flex;
+    justify-self: center;
+}
 #NombreDepto{
 	color: var(--unam-azul);
 	display: flex;
