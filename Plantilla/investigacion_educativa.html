@@ -3,125 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Departamento de Investigación Educativa | UNAM</title>
-    
+    <title>Departamentos de Investigación</title>
     <link rel="stylesheet" href="css/style.css">
-
-    <style>
-        .header-interno {
-            background-color: var(--unam-azul);
-            padding: 40px 20px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .header-interno h1 {
-            color: #ffffff !important;
-            margin: 0;
-            font-size: 2.2em;
-            letter-spacing: 1px;
-        }
-
-        .back-nav {
-            margin-bottom: 20px;
-        }
-
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            color: var(--unam-azul);
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1em;
-            transition: color 0.2s, transform 0.2s;
-        }
-
-        .back-link:hover {
-            color: var(--unam-dorado);
-            transform: translateX(-5px); /* Pequeño efecto de movimiento hacia la izquierda */
-        }
-
-        /* Contenedor tipo tarjeta para el texto largo */
-        .content-card {
-            background: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            border-top: 5px solid var(--unam-dorado);
-            margin-bottom: 30px;
-        }
-
-        .content-card h2 {
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #e1e4e8;
-            font-size: 1.5em;
-            color: var(--unam-azul);
-        }
-
-        .content-card p {
-            line-height: 1.7;
-            color: #444;
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-
-        .content-card ul {
-            margin-left: 20px;
-            margin-bottom: 20px;
-            line-height: 1.6;
-            color: #444;
-        }
-
-        .content-card li {
-            margin-bottom: 10px;
-        }
-    </style>
 </head>
 <body>
 
-    <header class="header-interno">
-        <h1>Departamento de Investigación Educativa</h1>
+    <header class="hero-section">
+        <img src="img/F1.jpg" alt="Campus Universitario" class="hero-image">
+        <h1 class="hero-title">DEPARTAMENTOS DE INVESTIGACIÓN</h1>
     </header>
 
     <main class="main-container">
-        
-        <nav class="back-nav">
-            <a href="index.html" class="back-link">
-                <span>←</span> Regresar a Departamentos
-            </a>
-        </nav>
+    <img class="logoDepto" src="img/DICEC.png" alt="Departamento de Investigación en Comunicación y Estudios Culturales">
+        <div id="NombreDepto" style="color: #8347ad;"><h2>Departamento de Investigación en Comunicación y Estudios Culturales</h2></div>
+        <section class="info-section">
+            
+            <div class="profile-card">
+                <div class="profile-image-placeholder">
+                <img src="" alt="Perfil">
+                </div>
+                <h2>Dra. Luz María Montelongo Díaz Barriga</h2>
+                <p class="role">Jefa del Departamento</p>
+                <ul class="contact-info">
+                    <li>Edificio A de la Unidad de Investigación Multidisciplinaria II, primer piso.</li>
+                    <li>📞 56231750, Ext. 38978, 98980 </li>
+                    <li>✉️ diesisedu@acatlan.unam.mx</li>
 
-        <section class="content-card">
-            <h2>🎯 Nuestro Objetivo</h2>
-            <p>
-                Desarrollar investigación aplicada en la caracterización de las acciones generadas por la exposición a agentes perturbadores tanto de origen natural como antrópico, a través del conocimiento y estudios experimentales de materiales y sistemas estructurales.
-            </p>
+                    <li><strong>Sala de Asesoría e Intervención Pedagógica</strong></li>
+                    <li>Edificio A de la Unidad de Investigación Multidisciplinaria II, primer piso.</li>
+                    <li>Dra. María Isabel Carolina Medina Rodríguez</li>
+                    <li>📞 56231750, Ext. 38977  </li>
+                    <li>✉️ siap@acatlan.unam.mx</li>
+                </ul>
+            </div>
+
+            <div class="details-column">
+                <div class="detail-card highlight-card">
+                    <h3>🎯 Nuestro Objetivo</h3>
+                    <ul>
+                        <li>Desarrollar investigación educativa multidisciplinaria de carácter básica y aplicada.</li>
+                        <li>Atender las problemáticas vinculadas a la planeación y administración educativa, diseño curricular y evaluación de los procesos educativos.</li>
+                        <li>Asesoría e intervención psico-socio-pedagógico. </li>
+                    </ul>
+                </div>
+
+                <div class="detail-card">
+                    <div class="detail-card-IN" onclick="toggleDisplayFlex('funcionesVen')">
+                        <h3>Funciones</h3>
+                        <p class="link-btn">Ver funciones &gt;</p>
+                    </div>
+                    <hr>
+                    <div class="detail-card-IN" onclick="toggleDisplayFlex('investigacionVen')">
+                        <h3>Áreas de investigación</h3>
+                        <p class="link-btn">Ver áreas &gt;</p>
+                    </div>
+                    <hr>
+                    <div class="detail-card-IN" onclick="toggleDisplayFlex('proyectosVen')">
+                        <h3>Proyectos</h3>
+                        <p class="link-btn">Ver proyectos &gt;</p>
+                    </div>
+                </div>
+            </div>
+            
         </section>
+    <hr>
 
-        <div class="info-section">
-            <div class="detail-card">
-                <h3>📋 Funciones Principales</h3>
-                <ul>
-                    <li>Promover el desarrollo de la investigación educativa.</li>
-                    <li>Fomentar la participación de alumnos y académicos en proyectos institucionales.</li>
-                    <li>Organizar seminarios, coloquios y congresos académicos.</li>
-                    <li>Publicar los resultados de las investigaciones realizadas en el departamento.</li>
-                </ul>
-            </div>
+    <div><h2 style="color: var(--unam-azul);margin: 20px;margin-left: 0;">Departamentos</h2></div>
 
-            <div class="detail-card highlight-card">
-                <h3>🚀 Proyectos Destacados</h3>
-                <ul>
-                    <li><strong>Proyecto A:</strong> Innovación en aulas híbridas (2024-2026).</li>
-                    <li><strong>Proyecto B:</strong> Análisis del rendimiento escolar post-pandemia.</li>
-                    <li><strong>Proyecto C:</strong> Desarrollo de estrategias psico-pedagógicas.</li>
-                </ul>
-            </div>
-        </div>
+        <section id="tarjetas-contenedor" class="cards-grid">
+            </section>
 
     </main>
+
+    <div class="Ventana" id="funcionesVen">
+        <div class="Emergente">
+            <h2>Funciones</h2>
+            <br>
+            <ul>
+                <li>Brindar a las áreas académicas de la FES Acatlán los servicios de orientación y apoyo para el diseño curricular, la formación docente y la evaluación de los aprendizajes.</li>
+                <li>Realizar los diagnósticos sobre trayectorias escolares y procesos formativos de los estudiantes de la comunidad universitaria.</li>
+                <li>Diagnosticar y proponer estrategias de atención al problema sobre desarrollo de adicciones entre los jóvenes de la comunidad universitaria.</li>
+                <li>Realizar investigaciones sobre fenómenos educativos.</li>
+                <li>Diseñar el programa de intervención psico-socio-pedagógica.</li>
+                <li>Intervención pedagógica a la población infantil de tres a doce años en las áreas de: lenguaje, psicomotricidad, problemas de aprendizaje y Déficit de atención e Hiperactividad.</li>
+                <li>Aplicar y dar seguimiento al programa de intervención psicopedagógica de la SIAP.</li>
+                <li>Orientar a padres de familia y profesores de educación básica, en relación a su participación en la atención de las necesidades especiales de los asistentes a la SIAP, a través de talleres y coloquios.</li>
+                <li>Atención a la comunidad universitaria en crisis y en caso necesario canalizarlas al área correspondiente.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="Ventana" id="investigacionVen">
+        <div class="Emergente">
+            <h2>Áreas de investigación</h2>
+            <br>
+            <ul>
+                <li>Procesos de aprendizaje y educación</li>
+                <li>Educación superior, ciencia, tecnología e innovación</li>
+                <li>Currículum</li>
+                <li>Evaluación educativa</li>
+                <li>Sujetos de y en la educación</li>
+                <li>Temas emergentes en la educación</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="Ventana" id="proyectosVen">
+        <div class="Emergente">
+            <h2>Proyectos</h2>
+            <br>
+            <ul>
+                <li><strong>Sistema de evaluación de la investigación.</strong> Evaluar los avances de la investigación y el impacto en la solución de problemas del entorno a partir de un programa de indicadores.</li>
+                <li><strong>Programa de Iniciación Temprana a la Investigación.</strong> Impulsar la iniciación temprana a la investigación mediante la impartición de talleres anuales para jóvenes investigadoras e investigadores.</li>
+                <li><strong>El trabajo de la SIAP. Voces de sus actores.</strong> Dar cuenta del papel formativo del trabajo realizado de la SIAP a través de sus principales actores (coordinadores, prestadores de servicios, padres de familia e infancias) desde el concepto teórico de andamiaje.
+            <ul>
+                <li><strong>Fecha de inicio:</strong> 25 de marzo de 2025</li>
+                <li><strong>Fecha de término:</strong> 31 de enero de 2026</li>
+            </ul>
+            </li>
+            <li><strong>Evaluación docente en la FES-Acatlán y sus representaciones sociales.</strong> Conocer y analizar las representaciones sociales acerca de la evaluación docente que tienen los actores implicados directamente en los programas de licenciatura que se implementan en FES-Acatlán (UNAM) en la modalidad escolarizada con la finalidad de contar con insumos para la toma de decisiones orientadas al mejoramiento de los servicios institucionales.
+                <ul>
+                    <li><strong>Fecha de inicio:</strong> 25 de marzo de 2025</li>
+                    <li><strong>Fecha de término:</strong> 30 de marzo de 2026</li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
