@@ -22,7 +22,6 @@ body {
 .hero-section {
     text-align: center;
     background-color: #fff;
-    padding-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
@@ -174,14 +173,13 @@ body {
 .cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+        padding: 0 20px;
 }
 
 /* Cambios en la tarjeta para que actúe como botón */
 .new-format-card {
     background: #fff;
-    border: 1px solid #e1e4e8;
-    border-radius: 8px;
+    border-top: 4px solid var(--unam-azul);
     padding: 15px;
     display: flex;
     align-items: center;
